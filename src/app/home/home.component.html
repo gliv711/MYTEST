@@ -1,0 +1,25 @@
+<div class="navbar-container" [ngClass]="{'sticky': isSticky, 'hidden': !isSticky && !isScrolledToTop}">
+  <div class="logo-container">
+    <h1 class="logo">
+      <img src="assets/img/logo-purple.png" alt="SANDBOX Logo" />
+    </h1>
+  </div>
+  <nav class="navbar">
+    <a routerLink="/" class="nav-link">WHAT WE DO?</a>
+    <a routerLink="/" class="nav-link">CHOOSE US?</a>
+    <a routerLink="/" class="nav-link">SOLUTIONS</a>
+    <div class="dropdown">  <a href="#" class="nav-link dropdown-toggle" id="caseStudiesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            CASE STUDIES
+        </a>
+        <ul class="dropdown-menu mt-4" aria-labelledby="caseStudiesDropdown">
+            <li><a routerLink="/case-studies-1" class="dropdown-item">Case Study 1</a></li>
+            <li><a routerLink="/case-studies-2" class="dropdown-item">Case Study 2</a></li>
+        </ul>
+    </div>
+    <a routerLink="/who-are-we1" class="nav-link">WHO ARE WE ?</a>
+    <a routerLink="/who-are-we2" class="nav-link">WHO ARE WE ?</a>
+    <button class="btn btn-lg custom-text-color rounded-pill btn-light">Free Trial</button>
+  </nav>
+</div>
+
+

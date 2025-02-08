@@ -1,0 +1,67 @@
+.navbar-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically align items */
+  padding: 10px 20px; /* Add some padding */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transitions */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-100%); /* Start off screen */
+  position: absolute;
+  /* Other initial styles */
+}
+
+.navbar-container.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 100;
+  opacity: 1; 
+
+  transform: translateY(0);
+}
+
+.logo-container {
+  margin-right: 100px; /* Space between logo and menu */
+  margin-left: 100px;
+}
+
+.logo {
+  margin: 0; /* Remove default logo margins */
+  display: inline-block; /* Prevent image from affecting layout */
+}
+
+.navbar {
+  display: flex; /* Use flexbox for menu items */
+  align-items: center; /* Vertically align menu items */
+}
+
+.navbar a.nav-link { /* Style for links */
+  margin-right: 50px; /* Space between links */
+  text-decoration: none; /* Remove underlines */
+  color: #333; /* Example color */
+}
+
+.navbar a.nav-link:hover {
+  color: #007bff; /* Example hover color */
+}
+
+.navbar button {
+  margin-left: auto; /* Push button to the right */
+}
+
+/* Optional: Add a hidden class for initial state (as before) */
+.navbar-container.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+
+.btn-light.custom-text-color { /* Or a more specific selector if needed */
+  background-color: #7B68EE; /* Solid lavender/purple background */
+  border: none; /* Remove any default border */
+  color: white; /* White text */
+  padding: 12px 24px; /* Adjust padding for size */
+  font-size: 16px; /* Adjust font size */
+  font-weight: 500; /* Slightly bolder text */
+}
